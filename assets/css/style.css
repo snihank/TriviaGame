@@ -1,0 +1,31 @@
+body {
+    background-image: url("../images/image3.jpeg");
+    background-size: cover;
+
+}
+
+.row {
+    margin-top: 10px;
+}
+
+#time {
+    margin-bottom: 15px;
+}
+
+input[type="radio"]{
+    margin: 0 5px 0 10px;
+  }
+
+
+.jumbotron{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+}
+
+
+#start{
+    font-size: 30px;
+    width: 100px;
+    height: auto;
+}

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Crystal Collector</title>
+  <title>Java Basics</title>
 
   <!-- link to jQuery library -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,9 +19,295 @@
 
 
 <body>
+
+  <!-- Header -->
+  <div id = "body" class = "container">
+
+    <div class= "jumbotron">
+    
+      
+        <header>
+          Java Basics
+        </header>
+      <button id="scoreBtn" type="submit">Check Score</button>
+    <h3>Click the above button to check your score after the timer is up</h3>
+  </div>
+  </div>
+  <!-- Header ends -->
+
+  <!-- Start Button -->
+  <div class = "container">
+  <button id="start">Start</button>
+  </div>
+
+  <!-- Start Button ends -->
+
+  <!-- Timer -->
+  <div id = "time" class = "container">
+    <div class= "row">
+      <div class = "col">
+        Time Remaining :  
+      </div>
+    </div>
+  </div>
+
+  <!-- Timer ends -->
+
+  <!-- Question and Answer container -->
+  <div id = "content" class = "container">
+  <!-- Question 1 -->
+  <div id = "q1" class = "container">
+      <div class= "row">
+        <div class = "col">
+          Question 1: Which of the following enables JAVA to be platform-independent?  
+        </div>
+      </div>
+    </div>
+
+    <div id = "ans1" data-question-number="0" class = "container">
+        <div class= "row">
+            <div class = "col">
+              
+                
+              <input type="radio"  id = "a1" name="opt1" value="1" onclick="isClicked()">None
+              <input type="radio"  id = "a2" name="opt1" value="2" onclick="isClicked()">JRE
+              <input type="radio"  id = "a3" name="opt1" value="3" onclick="isClicked()">JVM
+              <input type="radio"  id = "a4" name="opt1" value="4" onclick="isClicked()">JDK
+    </div>    
+    </div>
+    </div>
+    
+    <!-- Question 1 ends -->
+
+    <!-- Question 2 -->
+
+    <div id= "q2" class = "container">
+        <div class= "row">
+          <div class = "col">
+            Question 2: Which of the following can be declared inside an Interface?  
+          </div>
+        </div>
+      </div>
+  
+      <div id = "ans2" class = "container">
+          <div class= "row">
+              <div class = "col">
+          <input type="radio" name="opt2" value="5">Object
+          <input type="radio" name="opt2" value="6">Instance Variable
+          <input type="radio" name="opt2" value="7">Constant Variable
+          <input type="radio" name="opt2" value="8">None
+          
+        </div>
+        </div>
+        </div>
+        <!-- Question 2 ends -->
+
+
+        <!-- Question 3 -->
+
+        <div id= "q3" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 3: Which of the following keywords is used on a field of an object to prevent its conversion into streams?  
+              </div>
+            </div>
+          </div>
+      
+      <div id = "ans3" class = "container">
+          <div class= "row">
+              <div class = "col">
+           <input type="radio" name="opt3" value="9">Final
+           <input type="radio" name="opt3" value="10">Transient
+           <input type="radio" name="opt3" value="11">Private
+           <input type="radio" name="opt3" value="12">Static
+            </div>
+            </div>
+            </div>
+            <!-- Question 3 ends -->
+
+            <!-- Question 4 -->
+            
+        <div id= "q4" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 4: Which of the following enables Java to support multiple Inheritance?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans4" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt4" value="13">Interface</label>
+              <input type="radio" name="opt4" value="14">JDBC</label>
+              <input type="radio" name="opt4" value="15">Abstract Classes</label>
+              <input type="radio" name="opt4" value="16">Extends</label>
+            </div>
+            </div>
+            </div>
+            <!-- Question 4 ends -->
+
+
+             <!-- Question 5 -->
+
+        <div id= "q5" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 5: Which of the following class is the super class of all classes in java library?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans5" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt5" value="17">java.util.Map
+              <input type="radio" name="opt5" value="18">system.out.println
+              <input type="radio" name="opt5" value="19">java.land.Throwable
+              <input type="radio" name="opt5" value="20">java.lang.object
+            </div>
+            </div>
+            </div>
+            <!-- Question 5 ends -->
+
+            <!-- Question 6 -->
+
+        <div id= "q6" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 6: Which of the exceptions occur due to programmers' mistake?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans6" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt6" value="21">Checked Exception
+              <input type="radio" name="opt6" value="22">Unchecked Exception
+          </div>
+          </div>
+          </div>
+            <!-- Question 6 ends -->
+
+            <!-- Question 7 -->
+
+        <div id= "q7" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 7: Which of the following memory holds all the methods?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans7" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt7" value="23">Heap
+              <input type="radio" name="opt7" value="24">Stack
+              <input type="radio" name="opt7" value="25">Class Loader
+              <input type="radio" name="opt7" value="26">JRE
+            </div>
+            </div>
+            </div>
+            <!-- Question 7 ends -->
+
+            <!-- Question 8 -->
+
+        <div id= "q8" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 8: Which of the following classes is Thread Safe?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans8" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt8" value="27">String
+              <input type="radio" name="opt8" value="28">String Buffer
+              <input type="radio" name="opt8" value="29">String Builder
+              <input type="radio" name="opt8" value="30">ArrayList
+            </div>
+            </div>
+            </div>
+            <!-- Question 8 ends -->
+
+             <!-- Question 9 -->
+
+        <div id= "q9" class = "container">
+            <div class= "row">
+              <div class = "col">
+                Question 9: Which of the following Object Oriented Feature in Java enables data-hiding?  
+              </div>
+            </div>
+          </div>
+      
+          <div id = "ans9" class = "container">
+              <div class= "row">
+                  <div class = "col">
+              <input type="radio" name="opt9" value="31">Abstraction
+              <input type="radio" name="opt9" value="32">Encapsulation
+              <input type="radio" name="opt9" value="33">Inheritance
+              <input type="radio" name="opt9" value="34">Polymorphism
+            </div>
+            </div>
+            </div>
+            <!-- Question 9 ends -->
+
+            <!-- Question 10 -->
+
+            <div id= "q10" class = "container">
+                <div class= "row">
+                  <div class = "col">
+                    Question 10: Which of the following Object Oriented Feature in Java enables hiding implementation details?  
+                  </div>
+                </div>
+              </div>
+          
+              <div id = "ans10" class = "container">
+                  <div class= "row">
+                      <div class = "col">
+                  <input type="radio" name="opt10" value="35">Abstraction
+                  <input type="radio" name="opt10" value="36">Encapsulation
+                  <input type="radio" name="opt10" value="37">Inheritance
+                  <input type="radio" name="opt10" value="38">Polymorphism
+                </div>
+                </div>
+                </div>
+                <!-- Question 10 ends -->
+
+                </div>
+                <!-- Question and Answer container ends -->
+
+            <!-- Stop Button -->
+  <!-- <div class = "container">
+      <div class= "row">
+          <div class = "col">
+      <button id="stop">Stop</button>
+      </div>
+      </div>
+      </div> -->
+            <!-- Stop Button ends -->
+
+            <!-- Time Taken -->
+  <div id = "score" class = "container">
+      <div class= "row">
+        <div class = "col">
+          Score:
+        </div>
+      </div>
+    </div>
+  
+    <!-- Time Taken -->
+
+
+
+
    
 <!-- Link to JavaScript game.js -->
-<script type="text/javascript" src="assets/javascript/game.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
